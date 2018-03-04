@@ -1,12 +1,20 @@
 // FILL IN THE FUNCTIONS BELOW
 
 var sprintFunctions = {
-  largestEl: function(){  
-    // your code here
+  largestEl: function(arr){  
+    return (arr.sort((a, b) => {
+      return a < b;
+    }))[0]
   },
   
-  reversed: function(){  
-    // your code here
+  reversed: function(str) {  
+    let newStr = "";
+    
+    for (let i = str.length - 1; i >= 0; i--) {
+      newStr += str[i];
+    }
+    
+    return newStr;
   },
 
   loudSnakeCase: function(){  
